@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"irdc\startup_stm32f103xe.o"
+"irdc\main.o"
+"irdc\stm32f1xx_it.o"
+"irdc\stm32f1xx_hal_msp.o"
+"irdc\stm32f1xx_hal_timebase_tim.o"
+"irdc\stm32f1xx_hal_gpio_ex.o"
+"irdc\stm32f1xx_hal_tim.o"
+"irdc\stm32f1xx_hal_tim_ex.o"
+"irdc\stm32f1xx_hal.o"
+"irdc\stm32f1xx_hal_rcc.o"
+"irdc\stm32f1xx_hal_rcc_ex.o"
+"irdc\stm32f1xx_hal_gpio.o"
+"irdc\stm32f1xx_hal_dma.o"
+"irdc\stm32f1xx_hal_cortex.o"
+"irdc\stm32f1xx_hal_pwr.o"
+"irdc\stm32f1xx_hal_flash.o"
+"irdc\stm32f1xx_hal_flash_ex.o"
+"irdc\stm32f1xx_hal_exti.o"
+"irdc\system_stm32f1xx.o"
+--strict --scatter "irdc\irdc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "irdc.map" -o irdc\irdc.axf
